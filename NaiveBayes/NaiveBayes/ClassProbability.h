@@ -2,6 +2,7 @@
 
 #include <array>
 #include <map>
+#include <iostream>
 #include "Constants.h"
 
 using std::array;
@@ -17,7 +18,7 @@ private:
 	array<array<double, kImageSize>, kImageSize> black_probabilities;
 
 public:
-	void UpdateMatrix(int i, int j, bool color);
+	void UpdateMatrix(array<array<char, kImageSize>, kImageSize> image_matrix);
 	void ComputeSmoothProbabilities();
 	void ComputeLogProbabilities();
 
@@ -27,4 +28,6 @@ public:
 	array<array<double, kImageSize>, kImageSize> get_black_probabilities();
 	int get_label();
 	double get_appearance_probability();
+
+	friend std::ostream& operator<<(std::ostream& os, const ClassProbability& class_prob);
 };

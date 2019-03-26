@@ -152,7 +152,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="ClassProbability.cpp" />
-    <ClCompile Include="NaiveBayes.cpp" />
+    <ClCompile Include="Classify.cpp" />
     <ClCompile Include="NaiveBayesTest.cpp" />
     <ClCompile Include="TrainingModel.cpp" />
   </ItemGroup>
@@ -163,7 +163,7 @@
     <ClInclude Include="catch.hpp" />
     <ClInclude Include="ClassProbability.h" />
     <ClInclude Include="Constants.h" />
-    <ClInclude Include="NaiveBayes.h" />
+    <ClInclude Include="Classify.h" />
     <ClInclude Include="TrainingModel.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

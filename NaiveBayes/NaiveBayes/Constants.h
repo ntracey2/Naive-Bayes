@@ -1,4 +1,4 @@
 #pragma once
 
 const int kImageSize = 28;
-const double kSmoothingConstant = 0.5;
+const double kSmoothingConstant = 5;
