@@ -34,6 +34,7 @@ public:
 	void set_num_appearances(int num);
 
 	int get_label();
+	int get_num_appearances();
 	double get_appearance_probability();
 
 	friend std::ostream& operator<<(std::ostream& os, const ClassProbability& class_prob);

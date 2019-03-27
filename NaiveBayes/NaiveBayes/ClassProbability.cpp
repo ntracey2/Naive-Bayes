@@ -82,6 +82,11 @@ int ClassProbability::get_label() {
 	return label;
 }
 
+int ClassProbability::get_num_appearances()
+{
+	return num_appearances;
+}
+
 double ClassProbability::get_appearance_probability() {
 	return (double) num_appearances / total_training_images;
 }

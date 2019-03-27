@@ -128,6 +128,7 @@ vector<int> TrainingModel::GetLabelVector(string file_name) {
 	return labels;
 }
 
+
 void TrainingModel::SaveToFile(string file_name) {
 	ofstream file;
 	file.open(file_name);
@@ -141,4 +142,9 @@ void TrainingModel::SaveToFile(string file_name) {
 array<ClassProbability, 10> TrainingModel::get_prob_map()
 {
 	return prob_map;
+}
+
+int TrainingModel::get_num_images()
+{
+	return num_images;
 }

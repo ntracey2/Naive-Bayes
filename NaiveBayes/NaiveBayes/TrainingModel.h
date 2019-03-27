@@ -28,4 +28,5 @@ public:
 	void SaveToFile(string file_name);
 
 	array<ClassProbability, 10> get_prob_map();
+	int get_num_images();
 };
