@@ -23,9 +23,16 @@ public:
 	void ComputeLogProbabilities();
 
 	ClassProbability(int num, int total_images);
+	ClassProbability(int num);
+	ClassProbability();
 
 	array<array<double, kImageSize>, kImageSize> get_white_probabilities();
 	array<array<double, kImageSize>, kImageSize> get_black_probabilities();
+
+	void set_white_probabilities(array<array<double, kImageSize>, kImageSize> arr);
+	void set_black_probabilities(array<array<double, kImageSize>, kImageSize> arr);
+	void set_num_appearances(int num);
+
 	int get_label();
 	double get_appearance_probability();
 

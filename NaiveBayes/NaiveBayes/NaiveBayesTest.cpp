@@ -7,10 +7,10 @@
 #include "Constants.h"
 
 TEST_CASE("Test functinality") {
-	TrainingModel model("trainingimages", "traininglabels");
-	model.ParseImageFile("trainingimages");
-
-	model.ComputeProbabilities();
+	//TrainingModel model("trainingimages", "traininglabels");
+	//model.ParseImageFile("trainingimages");
+	TrainingModel model("model_data");
+	//model.ComputeProbabilities();
 
 	ParseTestImageFile("testimages", model);
 
@@ -18,9 +18,11 @@ TEST_CASE("Test functinality") {
 
 	for (int i = 0; i <= 9; i++) {
 		for (int j = 0; j <= 9; j++) {
-			std::cout << confusion_matrix[i][j];
+			std::cout << confusion_matrix[i][j] << " ";
+			
 		}
 		std::cout << std::endl;
 	}
-}
 
+	//model.SaveToFile("model_data");
+}
